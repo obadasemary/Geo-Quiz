@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		C3FF0CCD1D25332400BB8B1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FF0CCC1D25332400BB8B1D /* AppDelegate.swift */; };
-		C3FF0CCF1D25332400BB8B1D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FF0CCE1D25332400BB8B1D /* ViewController.swift */; };
 		C3FF0CD21D25332400BB8B1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3FF0CD01D25332400BB8B1D /* Main.storyboard */; };
 		C3FF0CD41D25332400BB8B1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3FF0CD31D25332400BB8B1D /* Assets.xcassets */; };
 		C3FF0CD71D25332400BB8B1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3FF0CD51D25332400BB8B1D /* LaunchScreen.storyboard */; };
 		C3FF0CE21D25332400BB8B1D /* Geo_QuizTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FF0CE11D25332400BB8B1D /* Geo_QuizTests.swift */; };
 		C3FF0CED1D25332400BB8B1D /* Geo_QuizUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FF0CEC1D25332400BB8B1D /* Geo_QuizUITests.swift */; };
+		C3FF0CFD1D25337F00BB8B1D /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FF0CFA1D25337F00BB8B1D /* Country.swift */; };
+		C3FF0CFE1D25337F00BB8B1D /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FF0CFB1D25337F00BB8B1D /* QuizViewController.swift */; };
+		C3FF0CFF1D25337F00BB8B1D /* QuizViewController+Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FF0CFC1D25337F00BB8B1D /* QuizViewController+Functions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,6 @@
 /* Begin PBXFileReference section */
 		C3FF0CC91D25332400BB8B1D /* Geo Quiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Geo Quiz.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3FF0CCC1D25332400BB8B1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C3FF0CCE1D25332400BB8B1D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C3FF0CD11D25332400BB8B1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C3FF0CD31D25332400BB8B1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C3FF0CD61D25332400BB8B1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,9 @@
 		C3FF0CE81D25332400BB8B1D /* Geo QuizUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Geo QuizUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3FF0CEC1D25332400BB8B1D /* Geo_QuizUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Geo_QuizUITests.swift; sourceTree = "<group>"; };
 		C3FF0CEE1D25332400BB8B1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3FF0CFA1D25337F00BB8B1D /* Country.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		C3FF0CFB1D25337F00BB8B1D /* QuizViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		C3FF0CFC1D25337F00BB8B1D /* QuizViewController+Functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "QuizViewController+Functions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +101,10 @@
 		C3FF0CCB1D25332400BB8B1D /* Geo Quiz */ = {
 			isa = PBXGroup;
 			children = (
+				C3FF0CFA1D25337F00BB8B1D /* Country.swift */,
+				C3FF0CFB1D25337F00BB8B1D /* QuizViewController.swift */,
+				C3FF0CFC1D25337F00BB8B1D /* QuizViewController+Functions.swift */,
 				C3FF0CCC1D25332400BB8B1D /* AppDelegate.swift */,
-				C3FF0CCE1D25332400BB8B1D /* ViewController.swift */,
 				C3FF0CD01D25332400BB8B1D /* Main.storyboard */,
 				C3FF0CD31D25332400BB8B1D /* Assets.xcassets */,
 				C3FF0CD51D25332400BB8B1D /* LaunchScreen.storyboard */,
@@ -256,8 +262,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3FF0CCF1D25332400BB8B1D /* ViewController.swift in Sources */,
+				C3FF0CFD1D25337F00BB8B1D /* Country.swift in Sources */,
 				C3FF0CCD1D25332400BB8B1D /* AppDelegate.swift in Sources */,
+				C3FF0CFE1D25337F00BB8B1D /* QuizViewController.swift in Sources */,
+				C3FF0CFF1D25337F00BB8B1D /* QuizViewController+Functions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
